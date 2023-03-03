@@ -1,0 +1,245 @@
+/* Made By Kamel Maher */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body {
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+}
+aside {
+    width: 20%;
+    height: 100vh;
+    background-color: #003047;
+    color: white;
+    transition: .4s width;
+}
+aside .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+aside.change {
+    width: 50px;
+}
+aside .logo i {
+    font-size: 24px;
+}
+aside nav {
+    margin-top: 10px;
+}
+aside li {
+    margin: 10px 0;
+    padding: 10px 15px ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.deleted {
+    visibility: hidden;
+    transition: .2s;
+}
+aside li:hover {
+    background-color: #04a8f4;
+}
+aside li i {
+    font-size: 20px;
+}
+@media (max-width: 830px) {
+    aside {
+        width:45px;
+    }
+    aside li h3 , aside h1 {
+        visibility: hidden;
+    }
+}
+@media (max-width: 1130px ) {
+    aside {
+        position: fixed;
+        
+    }
+} 
+/* Start Main */
+/* Header*/
+main {
+    width: 80%;
+    background-color: #f4f4f4;
+}
+main.side {
+    width: calc(100% - 50px);
+}
+main header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+header .menu {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+header .search {
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+header .search i {
+    font-size: 15px;
+}
+header input {
+    border: 0;
+    outline: 0;
+    margin-left: 5px;
+    font-size: 15px;
+}
+main header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width: 1130px) {
+    main {
+        width: calc(100% - 50px);
+        margin-left: 20%;
+    }
+}
+@media (max-width: 830px) {
+    main {
+        margin-left: 50px;;
+}}
+/* Cards */
+.cards {
+    padding: 0 20px ;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card {
+    padding: 15px 10px ;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    justify-content: space-between;
+    background-color: white;
+    margin: 10px 0;
+}
+.card h4 {
+    font-size: 25px;
+}
+.card p {
+    font-size: 15px;
+    color: #bfbdbe;
+    transform: translateY(-5px);
+}
+.card i {
+    font-size: 30px;
+    color: #04a8f4;
+}
+@media (max-width: 580px) {
+    .cards {
+        justify-content: center;
+    }
+    .card {
+        width: 80%;
+    }
+}
+/* Content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .orders {
+    background-color: white;
+    margin-left: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+.orders .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.orders .head button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: #04a8f4;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.orders table {
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+}
+.orders table th:first-child {
+    text-align:start;
+}
+.orders table td:first-child {
+    text-align:start;
+}
+table td {
+    padding-bottom: 10px;
+}
+table td:last-child span {
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.content .customers {
+    margin-right: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    width: 300px;
+}
+.customers h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.customers li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.customers span {
+    display: block;
+    transform: translateY(-8px);
+    font-size: 14px;
+}
+.customers img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+@media (max-width: 1100px) {
+    .orders  {
+        width: 100%;
+    }
+    aside h1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1130px)  {
+    .customers {
+        margin-left: 20px;
+    }
+}
